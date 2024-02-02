@@ -4,7 +4,27 @@
 <title>CSS Website Layout</title>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
+<script>
+function myFunction() {
+   var element = document.body;
+   element.classList.toggle("dark-mode");
+}
+</script>
+  <style>
+body {
+  padding: 25px;
+  background-color: white;
+  color: black;
+  font-size: 25px;
+}
+
+.dark-mode {
+  background-color: black;
+  color: white;
+}
+
+
+  
 * {
   box-sizing: border-box;
 }
@@ -77,6 +97,7 @@ body {
   <a href="#">about</a>
   <a href="#">contact</a>
 </div>
+  <button onclick="myFunction()">Toggle dark mode</button>
 
 <div class="row">
   <div class="column">
